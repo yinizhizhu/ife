@@ -1,0 +1,49 @@
+﻿命名字符参考：
+    &gt; 表示大于符号">" (>)
+    &lt; 表示小于符号"<" (<)
+    &amp; 表示和符号"and"(&)
+    &quot; 表示引用符号" (")
+
+文档类型和注释
+除标签，文本内容和实体外，一个HTML文档一定需要在第一行做出文档类型断言(doctype declaration)。在现代HTML中，这句断言书写如下：
+<!DOCTYPE html>
+
+<input required="required">
+
+<img src="w3school.jpg" width="104" height="142">
+一般在结束标签后面空格加上个斜杠（这在XHTML是必需的）
+<img src="w3school.jpg" width="104" height="142" />
+
+<p>My dog ate <em>all</em> the guacamole.</p>
+
+<a href="http://www.w3school.com.cn">This is a link</a>
+
+<br> 就是没有关闭标签的空元素（<br> 标签定义换行）
+<br> 在所有浏览器中都是有效的，但使用 <br />其实是更长远的保障
+
+<hr /> 标签在 HTML 页面中创建水平线。
+
+无下划线的链接
+<a href="/example/html/lastpage.html" style="text-decoration:none">
+
+外部样式表
+当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+内部样式表
+当单个文件需要特别样式时，就可以使用内部样式表。你可以在 head 部分通过 <style> 标签定义内部样式表。
+<head>
+<style type="text/css">
+body {background-color: red}
+p {margin-left: 20px}
+</style>
+</head>
+
+内联样式
+当特殊的样式需要应用到个别元素时，就可以使用内联样式。 使用内联样式的方法是在相关的标签中使用样式属性。样式属性可以包含任何 CSS 属性。以下实例显示出如何改变段落的颜色和左外边距。
+<p style="color: red; margin-left: 20px">
+This is a paragraph
+</p>
+
